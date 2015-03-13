@@ -21,14 +21,14 @@ use Font Awesome
 <h2>angular like</h2>
 
 <pre>
-var app = angular.module('myApp', ['autoShow.bar']);
-app.run(function($rootScope,ngNotification){
+var app = angular.module('myApp', ['chiang.ngPace']);
+app.run(function($rootScope,$ngNotification){
 
   $rootScope.notification = {};
-  $rootScope.notification.type = ngNotification.type;
-  $rootScope.notification.alerts = ngNotification.alerts;
-  $rootScope.notification.addAlert = ngNotification.addAlert;
-  $rootScope.notification.closeAlert = ngNotification.closeAlert;
+  $rootScope.notification.type = $ngNotification.type;
+  $rootScope.notification.alerts = $ngNotification.alerts;
+  $rootScope.notification.addAlert = $ngNotification.addAlert;
+  $rootScope.notification.closeAlert = $ngNotification.closeAlert;
 
   $rootScope.alert=function(){
     $rootScope.notification.addAlert({type: 'primary', msg: 'primary'});
