@@ -1,4 +1,4 @@
-# ngPace
+# ngNotification
 angularJS &amp; Font Awesome
 
 <a href="http://jsbin.com/zaveze" target"_blank">DEMO</a>
