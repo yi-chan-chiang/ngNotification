@@ -5,7 +5,8 @@ angular.module('chiang.ngNotification', [])
         //public methods
         var self = {};
         self.alerts = [];
-        self.closeTime=5000;
+        self.closeTime=400;
+        self.successTime=5000;
         self.type = {
             'primary': 'fa-bell',
             'success': 'fa-check',
@@ -20,7 +21,7 @@ angular.module('chiang.ngNotification', [])
             if (item.type == 'success') {
                 $timeout(function () {
                     self.closeAlert(item);
-                }, self.closeTime);
+                }, self.successTime);
             }
         };
         self.closeAlert = function (object) {
@@ -29,7 +30,7 @@ angular.module('chiang.ngNotification', [])
                 var index = self.alerts.indexOf(object);
                 if (index > -1)
                     self.alerts.splice(index, 1);
-            }, 400);
+            }, self.closeTime);
         };
         var targetElement = document.querySelector('body');
         this.el = document.createElement('div');
