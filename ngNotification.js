@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('autoShow.bar', [])
-    .factory('ngNotification', ['$rootScope', '$timeout', function ($rootScope, $timeout) {
+angular.module('chiang.ngNotification', [])
+    .factory('$ngNotification', ['$rootScope', '$timeout', function ($rootScope, $timeout) {
         //public methods
         var self = {};
         self.alerts = [];
