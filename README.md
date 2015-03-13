@@ -35,7 +35,7 @@ app.run(function($rootScope,ngNotification){
     $rootScope.notification.addAlert({type: 'warning', msg: 'warning'});
     $rootScope.notification.addAlert({type: 'danger', msg: 'danger'});
     $rootScope.notification.addAlert({type: 'success', msg: 'success'});
-    $rootScope.notification.addAlert({type: 'default', msg: 'success'});
+    $rootScope.notification.addAlert({type: 'default', msg: 'default'});
   };
   $rootScope.alert();
 });
