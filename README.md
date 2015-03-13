@@ -39,8 +39,13 @@ app.run(function($rootScope,$ngNotification){
   };
   $rootScope.alert();
 });
+</pre>
 
+<h2>set Times</h2>
 
+<pre>
+  $ngNotification.successTime=1000;
+  $ngNotification.closeTime=100;
 </pre>
 
 <h2>License</h2>
