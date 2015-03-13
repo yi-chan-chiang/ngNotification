@@ -5,6 +5,7 @@ angular.module('chiang.ngNotification', [])
         //public methods
         var self = {};
         self.alerts = [];
+        self.closeTime=5000;
         self.type = {
             'primary': 'fa-bell',
             'success': 'fa-check',
@@ -19,7 +20,7 @@ angular.module('chiang.ngNotification', [])
             if (item.type == 'success') {
                 $timeout(function () {
                     self.closeAlert(item);
-                }, 5000);
+                }, self.closeTime);
             }
         };
         self.closeAlert = function (object) {
