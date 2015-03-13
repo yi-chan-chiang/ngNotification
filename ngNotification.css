@@ -7,8 +7,9 @@
     overflow: hidden;
 }
 
-.notification-bar>div {
-    box-shadow: inset 60px 0 rgba(0, 0, 0, 0.9);
+.notification-bar > div {
+    background: #bdc3c7;
+    box-shadow: inset 60px 0 rgba(149, 165, 166,0.9);
     color: #FFF;
     padding: 10px;
     margin-top: 5px;
@@ -24,36 +25,36 @@
     opacity: 0.9;
 }
 
-.notification-bar>div:hover {
+.notification-bar > div:hover {
     opacity: 1;
 }
 
-.notification-bar>div.primary {
+.notification-bar > div.primary {
     background: #3498db;
-    box-shadow: inset 60px 0 rgba(41, 128, 185,0.9);
+    box-shadow: inset 60px 0 rgba(41, 128, 185, 0.9);
 }
 
-.notification-bar>div.danger {
+.notification-bar > div.danger {
     background: #E87352;
     box-shadow: inset 60px 0 rgba(192, 57, 43, 0.9);
 }
 
-.notification-bar>div.success {
+.notification-bar > div.success {
     background: #60CD9B;
     box-shadow: inset 60px 0 rgba(39, 174, 96, 0.9);
 }
 
-.notification-bar>div.warning {
+.notification-bar > div.warning {
     background: #EEC95A;
     box-shadow: inset 60px 0 rgba(243, 156, 18, 0.9);
 }
 
-.notification-bar>div.remove {
+.notification-bar > div.remove {
     -webkit-animation-name: closeSlide;
     animation-name: closeSlide;
 }
 
-.notification-bar>div>.item {
+.notification-bar > div > .item {
     color: #fff;
     position: absolute;
     display: block;
@@ -64,9 +65,9 @@
     transform: translate3d(0, -50%, 0);
 }
 
-.notification-bar>div>p {
+.notification-bar > div > p {
     color: #fff;
-    padding:15px 15px 15px 60px;
+    padding: 15px 15px 15px 60px;
     margin: 0;
 }
 
