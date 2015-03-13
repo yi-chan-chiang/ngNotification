@@ -1,0 +1,71 @@
+.notification-bar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    z-index: 998;
+    overflow: hidden;
+}
+
+.notification-bar>div {
+    box-shadow: inset 60px 0 rgba(0, 0, 0, 0.9);
+    color: #FFF;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    -webkit-animation-name: animSlide;
+    animation-name: animSlide;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: cubic-bezier(1, 0, 0.3, 1);
+    animation-timing-function: cubic-bezier(1, 0, 0.3, 1);
+    opacity: 0.9;
+}
+
+.notification-bar>div:hover {
+    opacity: 1;
+}
+
+.notification-bar>div.primary {
+    background: #3498db;
+    box-shadow: inset 60px 0 rgba(41, 128, 185,0.9);
+}
+
+.notification-bar>div.danger {
+    background: #E87352;
+    box-shadow: inset 60px 0 rgba(192, 57, 43, 0.9);
+}
+
+.notification-bar>div.success {
+    background: #60CD9B;
+    box-shadow: inset 60px 0 rgba(39, 174, 96, 0.9);
+}
+
+.notification-bar>div.warning {
+    background: #EEC95A;
+    box-shadow: inset 60px 0 rgba(243, 156, 18, 0.9);
+}
+
+.notification-bar>div.remove {
+    -webkit-animation-name: closeSlide;
+    animation-name: closeSlide;
+}
+
+.notification-bar>div>.item {
+    color: #fff;
+    position: absolute;
+    display: block;
+    font-size: 30px;
+    top: 50%;
+    left: 15px;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+}
+
+.notification-bar>div>p {
+    color: #fff;
+    padding-left: 60px;
+    margin: 0;
+}
