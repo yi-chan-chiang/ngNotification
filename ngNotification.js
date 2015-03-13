@@ -5,7 +5,6 @@ angular.module('chiang.ngNotification', [])
         //public methods
         var self = {};
         self.alerts = [];
-        self.closeTime=400;
         self.successTime=5000;
         self.type = {
             'primary': 'fa-bell',
@@ -30,7 +29,7 @@ angular.module('chiang.ngNotification', [])
                 var index = self.alerts.indexOf(object);
                 if (index > -1)
                     self.alerts.splice(index, 1);
-            }, self.closeTime);
+            }, 400);
         };
         var targetElement = document.querySelector('body');
         this.el = document.createElement('div');
