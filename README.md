@@ -45,7 +45,6 @@ app.run(function($rootScope,$ngNotification){
 
 <pre>
   $ngNotification.successTime=1000;
-  $ngNotification.closeTime=100;
 </pre>
 
 <h2>License</h2>
